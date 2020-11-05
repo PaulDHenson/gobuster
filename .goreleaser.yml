@@ -12,7 +12,9 @@ builds:
     goos:
       - linux
       - windows
-      - darwin
+      - darwini
+    flags:
+      - -rm-dist
 archives:
   - replacements:
       darwin: Darwin
