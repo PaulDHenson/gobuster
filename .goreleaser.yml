@@ -7,14 +7,14 @@ before:
     # you may remove this if you don't need go generate
     #- go generate ./...
 builds:
+    flags:
+      - --rm-dist
   - env:
       - CGO_ENABLED=0
     goos:
       - linux
       - windows
       - darwini
-    flags:
-      - -rm-dist
 archives:
   - replacements:
       darwin: Darwin
