@@ -13,6 +13,12 @@ pipeline {
       }
     }
 
+    stage ('Remove Dist') {
+	steps {
+	    sh 'rm -r ./dist'
+	}
+    }
+
     stage ('Release') {
 
       environment {
