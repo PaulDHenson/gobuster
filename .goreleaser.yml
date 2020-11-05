@@ -7,9 +7,9 @@ before:
     # you may remove this if you don't need go generate
     #- go generate ./...
 builds:
-    flags:
+  - flags:
       - -rm-dist
-  - env:
+    env:
       - CGO_ENABLED=0
     goos:
       - linux
