@@ -31,3 +31,5 @@ build
 v3
 
 .idea/
+
+dist/
