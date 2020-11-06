@@ -20,8 +20,7 @@ pipeline {
       }
 
       steps {
-        sh 'curl -sL https://git.io/goreleaser >> goscript'
-	sh './goscript --rm-dist'
+        sh 'curl -sL https://git.io/goreleaser | sh -s --rm-dist'
       }
     }
   }
